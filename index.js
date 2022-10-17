@@ -13,7 +13,7 @@ import { loginValidation, postCreateValidation, registerValidation } from './val
 //   'mongodb+srv://admin:12345q@cluster0.mkqqtge.mongodb.net/blog?retryWrites=true&w=majority'
 // )
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('DB - OK')
   })
