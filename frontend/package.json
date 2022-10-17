@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "prestart": "npm run build",
-    "build": "npx vite build",
-    "start": "node server.js"
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.3",
