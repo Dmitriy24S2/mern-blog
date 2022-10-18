@@ -23,6 +23,11 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 app.options('*', cors())
+app.enableCors({
+  origin: true,
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+  credentials: true
+})
 
 app.get('/', (req, res) => {
   res.send('Hello World!') // Browser displays info
